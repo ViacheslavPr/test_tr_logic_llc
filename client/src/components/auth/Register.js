@@ -98,7 +98,7 @@ class Register extends Component {
                   error={errors.password2}
                 />
                 <TextFieldGroup
-                  placeholder="You age"
+                  placeholder="A your age"
                   name="age"
                   type="text"
                   value={this.state.age}
