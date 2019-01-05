@@ -8,6 +8,9 @@ module.exports = function validateRegisterInput(data) {
   data.email = !isEmpty(data.email) ? data.email : "";
   data.password = !isEmpty(data.password) ? data.password : "";
   data.password2 = !isEmpty(data.password2) ? data.password2 : "";
+  data.age = !isEmpty(data.age) ? data.age : "";
+  data.country = !isEmpty(data.country) ? data.country : "";
+  data.gender = !isEmpty(data.gender) ? data.gender : "";
 
   if (!Validator.isLength(data.name, { min: 2, max: 30 })) {
     errors.name = "Name must be between 2 and 30 characters";
@@ -39,6 +42,22 @@ module.exports = function validateRegisterInput(data) {
 
   if (!Validator.equals(data.password, data.password2)) {
     errors.password2 = "Passwords must match";
+  }
+
+  if (Validator.isEmpty(data.age)) {
+    errors.age = "Age field is reqired";
+  }
+
+  if (!Validator.isInt(data.age, { min: 0, max: 150 })) {
+    errors.age = "not correct age!";
+  }
+
+  if (Validator.isEmpty(data.country)) {
+    errors.country = "Choose the country";
+  }
+
+  if (Validator.isEmpty(data.gender)) {
+    errors.gender = "Choose your gender";
   }
 
   return {
