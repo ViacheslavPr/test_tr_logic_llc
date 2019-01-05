@@ -98,7 +98,7 @@ class Register extends Component {
                   error={errors.password2}
                 />
                 <TextFieldGroup
-                  placeholder="A your age"
+                  placeholder="Age"
                   name="age"
                   type="text"
                   value={this.state.age}
@@ -106,7 +106,7 @@ class Register extends Component {
                   error={errors.age}
                 />
                 <TextSelectGroup
-                  placeholder="You country"
+                  placeholder="Country"
                   name="country"
                   type="text"
                   value={this.state.country}
@@ -167,7 +167,7 @@ class Register extends Component {
                     "Cook Islands",
                     "Costa Rica",
                     "Croatia",
-                    "Cura?ao",
+                    "Curaсao",
                     "Cyprus",
                     "Czech Republic",
                     "Denmark",
@@ -285,11 +285,11 @@ class Register extends Component {
                     "Portugal",
                     "Puerto Rico",
                     "Qatar",
-                    "R?union",
+                    "Reunion",
                     "Romania",
                     "Russia",
                     "Rwanda",
-                    "Saint Barth?lemy",
+                    "Saint Barthelemy",
                     "Saint Helena",
                     "Saint Kitts and Nevis",
                     "Saint Lucia",
@@ -298,7 +298,7 @@ class Register extends Component {
                     "Saint Vincent",
                     "Samoa",
                     "San Marino",
-                    "S?o Tom? and Pr?ncipe",
+                    "Sao Tome and Principe",
                     "Saudi Arabia",
                     "Senegal",
                     "Serbia",
@@ -354,7 +354,7 @@ class Register extends Component {
                   ]}
                 />
                 <TextSelectGroup
-                  placeholder="You gender"
+                  placeholder="Sex"
                   name="gender"
                   type="text"
                   value={this.state.gender}
